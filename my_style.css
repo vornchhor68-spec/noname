@@ -1,0 +1,263 @@
+.text-wrater{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.text-type{
+    display: inline-block;
+    justify-content: center;
+}
+.animation-text{
+    text-shadow: 0 0 10px  rgb(155, 57, 57);
+    color: rgb(178, 168, 198);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    white-space: nowrap;  
+    overflow: hidden;         
+    border-right: 3px solid #d278d8;
+    width: 0;
+    animation: 
+    typing 15s steps(75) infinite forwards, 
+    blink 0.85s
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+    50% { border-color: #89d921; }
+}
+h3{
+    text-align: center;
+    color: rgb(200, 214, 196);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 8px rgb(185, 159, 159);
+    font-size: 170%;
+}
+
+.home-pack{
+    background-image: url('suns.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;        
+    background-position: center;   
+    min-height: 100vh;
+}
+.login-form{
+    background-color: rgba(80, 82, 81, 0.873);
+    width: 100%;
+    padding: 2% 5%;
+    margin-top: 20px;
+    position: relative;
+    margin: 2px 5px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.852);
+}
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+.login-form label{
+    text-shadow: 0 0 5px rgb(115, 218, 31);
+    background-color: none;
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(106, 181, 238);
+    font-family: "Koulen", sans-serif;
+    font-size: 18px;
+    padding: 1%;
+    transition: all 0.3s ease;
+}
+.login-form input{
+    width: 75%;
+    padding: 12px 16px;
+    border: 2px solid rgba(116, 111, 111, 0.338);
+    border-radius: 8px;
+    margin: 2px 5px;
+    transition: 0.3s;
+    box-shadow: 0 0 50px rgb(6, 29, 40);
+}
+.login-form input:focus{
+    border-color: rgb(31, 105, 105);
+    outline: none;
+    border: 2px solid rgb(45, 216, 39);
+    box-shadow: 0 0 rgb(123, 14, 123);
+}
+.login-form input:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.box-over{
+    width: 20%;
+    border-radius: 5%;
+    margin-left: 35%;
+    margin-bottom: auto;
+}
+.submit-form {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 15% 20px;
+    background: rgb(143, 149, 145);
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 0 50px rgb(11, 62, 62);
+}
+.submit-form:hover{
+    background-color: rgb(18, 211, 255);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.box-center{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+}
+.box-center a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(206, 112, 224);
+    margin: 2% 5%;
+    padding: 5px 15px;
+    border: 2px solid rgb(1, 9, 12);
+    border-radius: 20px;
+    border-style: double;
+    border-bottom: 2px;
+    border-width: 3px;
+    border-top: 2px;
+    width: fit-content;
+    transition: 0.3s;
+    animation: alternate-reverse;
+}
+.box-center a:hover{
+    background-color: rgb(191, 240, 240);
+    cursor: pointer;
+}
+.item-about{
+    background-image: url('menu.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;        
+    background-position: center;   
+    min-height: 100vh;
+}
+.about-cent{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+}
+.about-cell{
+    border-radius: 2%;
+    width: 100%;
+}
+.about-cent a{
+    text-decoration: none;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 252, 254);
+    margin: 2% 5%;
+    padding: 5px 15px;
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 20px;
+    width: fit-content;
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.715);
+    animation: alternate-reverse;
+}
+.about-cent a:hover{
+    
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.find-item{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.find-item a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    color: rgb(11, 11, 11);
+    background-color: rgb(253, 253, 253);
+    margin: 2% 5%;
+    padding: 5px 15px;
+    border: 2px solid rgb(195, 195, 195);
+    border-radius: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.736);
+}
+.find-item a:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.back-home{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.back-home a{
+    text-decoration: none;
+    font-size: 120%;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 2% 5%;
+    padding: 5px 15px;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 20px;
+    width: fit-content;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(1, 7, 8, 0.904);
+}
+.back-home a:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.scroll-item{
+    margin: 5% auto;
+    overflow: hidden;
+    width: 90%;
+}
+.scroll-line{
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin: 1% 5%;
+    width: max-content;
+    animation: scroll 20s  linear infinite;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    text-shadow: 0 0 8px rgb(245, 245, 245);
+}
+.scroll-line:hover{
+    cursor: pointer ;
+    transform: scale(1.2);
+}
+.item-roll{
+    font-size: 150%;
+    margin-left: 2rem;
+}
+@keyframes scroll{
+    to{
+        transform: translateX(-50%);
+    }
+}
